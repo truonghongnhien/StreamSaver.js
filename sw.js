@@ -88,8 +88,8 @@ self.onfetch = event => {
   // Not comfortable letting any user control all headers
   // so we only copy over the length & disposition
   const responseHeaders = new Headers({
-    'Content-Type': 'application/octet-stream; charset=utf-8',
-
+ //   'Content-Type': 'application/octet-stream; charset=utf-8',
+ 'Content-Type': 'video/mp4',
     // To be on the safe side, The link can be opened in a iframe.
     // but octet-stream should stop it.
     'Content-Security-Policy': "default-src 'none'",
